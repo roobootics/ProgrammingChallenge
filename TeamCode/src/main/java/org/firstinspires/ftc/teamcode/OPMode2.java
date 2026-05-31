@@ -39,7 +39,7 @@ public class OPMode2 extends LinearOpMode {
         backLeftMotor.setMode(DcMotor.RunMode.RUN_WITHOUT_ENCODER);
         frontRightMotor.setMode(DcMotor.RunMode.RUN_WITHOUT_ENCODER);
 
-        while (backLeftMotor.getCurrentPosition() < 161){
+        while (backLeftMotor.getCurrentPosition() < 350){
             backLeftMotor.setPower(.5);
             frontRightMotor.setPower(.5);
             frontLeftMotor.setPower(.5);
@@ -49,7 +49,7 @@ public class OPMode2 extends LinearOpMode {
         intake.setPower(1);
         backLeftMotor.setMode(DcMotor.RunMode.STOP_AND_RESET_ENCODER);
         backLeftMotor.setMode(DcMotor.RunMode.RUN_WITHOUT_ENCODER);
-        
+
         while(backLeftMotor.getCurrentPosition() < 1000000) {
             backLeftMotor.setPower(.5);
             frontRightMotor.setPower(.5);
